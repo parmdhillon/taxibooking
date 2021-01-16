@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
-import Datetime from 'react-datetime';
-import 'react-datetime/css/react-datetime.css';
-import moment from 'moment';
-import { Controller, useForm } from 'react-hook-form';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
+import { useForm } from 'react-hook-form';
 
 const BookingScreen = () => {
-  const { register, handleSubmit, errors, reset, control } = useForm();
+  const { register, handleSubmit, errors, reset } = useForm();
   const [loading, setLoading] = useState(false);
+  const [startDate, setStartDate] = useState(new Date());
+
   const onSubmit = (userData) => {
-    userData.dateTime = moment(userData.dateTime).toDate();
-    reset({ name: '', startLoc: '', endLoc: '', dateTime: '', mobile: '' });
+    reset({ name: '', startLoc: '', endLoc: '', mobile: '' });
+    userData.dateTime = startDate.toDateString();
     setLoading(true);
     fetch('/api/mail', {
       headers: {
@@ -27,7 +28,6 @@ const BookingScreen = () => {
       })
       .then(function (data) {
         setLoading(false);
-        console.log('Email Sent:', data);
       })
       .catch((error) => {
         setLoading(false);
@@ -97,19 +97,9 @@ const BookingScreen = () => {
                   <span className="text-red-400">*Required</span>
                 )}
               </label>
-              <Controller
-                control={control}
-                name="dateTime"
-                defaultValue={' '}
-                forwardRef={register({ required: true })}
-                as={
-                  <Datetime
-                    inputProps={{
-                      className:
-                        'w-full h-10 px-3 text-base placeholder-gray-600 border rounded-lg focus:shadow-outline',
-                    }}
-                  />
-                }
+              <DatePicker
+                selected={startDate}
+                onChange={(date) => setStartDate(date)}
               />
             </div>
             <div className="relative w-full px-2 md:w-1/2">
