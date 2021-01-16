@@ -1,12 +1,10 @@
 import sgMail from '@sendgrid/mail';
-import moment from 'moment';
 sgMail.setApiKey(process.env.EMAIL_KEY);
 
 export default (req, res) => {
   let status;
 
   const { name, startLoc, endLoc, dateTime, car, mobile } = req.body;
-  console.log(moment(dateTime));
   console.log(req.body.name);
 
   if (!name || !startLoc || !endLoc || !dateTime || !car || !mobile) {
