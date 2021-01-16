@@ -8,9 +8,7 @@ const BookingScreen = () => {
   const { register, handleSubmit, errors, reset, control } = useForm();
   const [loading, setLoading] = useState(false);
   const onSubmit = (userData) => {
-    userData.dateTime = moment(userData.dateTime).format(
-      'dddd, MMMM Do YYYY, hh:mm a'
-    );
+    userData.dateTime = moment(userData.dateTime).toDate();
     reset({ name: '', startLoc: '', endLoc: '', dateTime: '', mobile: '' });
     setLoading(true);
     fetch('/api/mail', {
