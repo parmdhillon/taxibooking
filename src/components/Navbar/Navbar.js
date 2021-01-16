@@ -7,7 +7,7 @@ const Navbar = () => {
     SetIsOpen(!isOpen);
   };
   return (
-    <div className="w-full p-6 flex justify-between items-center fixed">
+    <div className="w-full p-6 flex justify-between items-center">
       <div className="w-56 mr-5">
         <img src="/img/logo.png" className="object-contain" />
       </div>

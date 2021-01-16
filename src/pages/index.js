@@ -1,4 +1,5 @@
 import Navbar from '../components/Navbar/Navbar';
+import BookingScreen from '../screens/BookingScreen';
 import HomeScreen from '../screens/HomeScreen';
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <>
       <Navbar />
       <HomeScreen />
+      <BookingScreen />
     </>
   );
 }
