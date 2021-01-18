@@ -1,11 +1,10 @@
 import sgMail from '@sendgrid/mail';
 sgMail.setApiKey(process.env.EMAIL_KEY);
 
-export default (req, res) => {
+export default async (req, res) => {
   let status;
 
   const { name, startLoc, endLoc, dateTime, car, mobile } = req.body;
-  console.log(req.body.name);
 
   if (!name || !startLoc || !endLoc || !dateTime || !car || !mobile) {
     res.statusCode = 400;
@@ -33,7 +32,7 @@ export default (req, res) => {
     `,
   };
 
-  sgMail
+  await sgMail
     .send(msg)
     .then(() => {
       status = 'sent';
