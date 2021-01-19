@@ -18,7 +18,6 @@ const RouteScreen = () => {
         settings: {
           slidesToShow: 4,
           slidesToScroll: 1,
-          dots: true,
         },
       },
       {
@@ -26,7 +25,6 @@ const RouteScreen = () => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          dots: true,
         },
       },
       {
@@ -46,7 +44,7 @@ const RouteScreen = () => {
     ],
   };
   return (
-    <section id="routes" className="w-full bg-charade-500 py-8">
+    <section id="routes" className="w-full bg-charade-500 pt-8 pb-14">
       <span className="block text-center text-4xl text-white font-bold">
         Popular Routes
       </span>
