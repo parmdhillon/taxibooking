@@ -10,8 +10,8 @@ const FeatureScreen = () => {
         <p className="text-center text-charade-300 text-xl my-8">
           Service is our attitude, and attitude is everything!
         </p>
-        <div className="flex flex-col justify-between items-start md:flex-row w-full my-16">
-          <div className="w-full">
+        <div className="flex flex-col justify-between items-start md:flex-row w-full">
+          <div className="w-full my-12 md:my-16">
             <div>
               <img
                 src="/img/features/pin.svg"
@@ -29,7 +29,7 @@ const FeatureScreen = () => {
             </div>
           </div>
 
-          <div className="w-full">
+          <div className="w-full my-12 md:my-16">
             <div>
               <img
                 src="/img/features/airplane.svg"
@@ -48,7 +48,7 @@ const FeatureScreen = () => {
             </div>
           </div>
 
-          <div className="w-full">
+          <div className="w-full my-12 md:my-16">
             <div>
               <img
                 src="/img/features/india.svg"
