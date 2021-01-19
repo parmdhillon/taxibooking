@@ -21,25 +21,25 @@ const Navbar = () => {
         style={{ width: `${isOpen ? `calc(100% - 48px)` : `auto`}` }}
       >
         <a
-          className="py-3  inline-block px-6 font-bold hover:bg-charade-300 hover:text-white rounded-2xl"
-          href="#"
+          className="py-3  inline-block px-6 font-bold hover:bg-gray-100  hover:text-charade-500"
+          href="#home"
         >
           Home
         </a>
         <a
-          className="py-3  inline-block px-6 font-bold hover:bg-charade-300 hover:text-white rounded-2xl"
-          href="#"
+          className="py-3  inline-block px-6 font-bold hover:bg-gray-100  hover:text-charade-500"
+          href="#booking"
         >
           Book Cab
         </a>
         <a
-          className="py-3  inline-block px-6 font-bold hover:bg-charade-300 hover:text-white rounded-2xl"
+          className="py-3  inline-block px-6 font-bold hover:bg-gray-100  hover:text-charade-500"
           href="#"
         >
           Routes
         </a>
         <a
-          className="py-3 inline-block px-6 font-bold hover:bg-charade-300 hover:text-white rounded-2xl"
+          className="py-3 inline-block px-6 font-bold hover:bg-gray-100  hover:text-charade-500"
           href="#"
         >
           Contact Us

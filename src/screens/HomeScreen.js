@@ -3,9 +3,12 @@ import { FaPhoneAlt, FaWhatsapp } from 'react-icons/fa';
 
 const HomeScreen = () => {
   return (
-    <div className="flex justify-center items-center h-screen flex-col-reverse md:flex-row">
-      <div className="w-full md:w-1/2 flex items-center justify-center md:justify-start h-full md:pl-8 pt-10 md:pt-0 pb-14">
-        <div className="w-full px-4 text-center md:text-left">
+    <section
+      id="home"
+      className="flex justify-center items-center h-screen flex-col-reverse lg:flex-row"
+    >
+      <div className="w-full lg:w-1/2 flex items-center justify-center lg:justify-start h-full lg:pl-8 pt-10 lg:pt-0 pb-14">
+        <div className="w-full px-4 text-center lg:text-left">
           <span className="font-extrabold text-charade-500 block my-2 text-5xl">
             Need Ride?
           </span>
@@ -18,7 +21,7 @@ const HomeScreen = () => {
             <FaPhoneAlt className="inline -my-1 text-xl" />{' '}
             <span className="font-bold">Call Us</span>
           </button>
-          <div className="flex justify-center md:justify-start items-center my-2">
+          <div className="flex justify-center lg:justify-start items-center my-2">
             <span className="text-red-400 text-xl font-bold">+91</span>
             <a
               href="tel:+919465313982"
@@ -27,21 +30,24 @@ const HomeScreen = () => {
               9465313982
             </a>
           </div>
-          <div className="flex my-5 flex-col md:block">
-            <a href="#booking" className="py-3 px-6 bg-charade-500 text-white font-bold text-xl rounded-xl border-2 border-charade-500 mr-3 w-full md:w-auto">
+          <div className="flex my-5 flex-col justify-center items-center lg:block">
+            <a
+              href="#booking"
+              className="py-3 px-6 bg-charade-500 text-white font-bold text-xl rounded-xl lg:mr-3 border-2 border-charade-500 w-full md:w-1/2"
+            >
               Book Cab
             </a>
-            <a className="p-3 text-charade-500 font-bold text-xl border-2 border-charade-500 rounded-xl w-full md:w-auto my-2 md:my-0">
+            <a className="p-3 text-charade-500 font-bold text-xl border-2 border-charade-500 rounded-xl w-full md:w-1/2 my-2 lg:my-0">
               <FaWhatsapp className="inline-block -my-2 mr-1 text-2xl" />
               WhatsApp Us
             </a>
           </div>
         </div>
       </div>
-      <div className="w-8/12 md:w-1/2 justify-center items-end md:items-center flex pt-5 md:pt-0">
-        <img src="/img/home.png" />
+      <div className="w-8/12 lg:w-1/2 flex justify-center items-center pt-5 lg:pt-0">
+        <img src="/img/home.png" className="w-72 lg:w-full" />
       </div>
-    </div>
+    </section>
   );
 };
 

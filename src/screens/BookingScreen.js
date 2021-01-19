@@ -97,10 +97,13 @@ const BookingScreen = () => {
                   <span className="text-red-400">*Required</span>
                 )}
               </label>
-              <DatePicker
-                selected={startDate}
-                onChange={(date) => setStartDate(date)}
-              />
+              <div className="w-full">
+                <DatePicker
+                  className="w-full h-10 px-3 text-base placeholder-gray-600 border rounded-lg focus:shadow-outline"
+                  selected={startDate}
+                  onChange={(date) => setStartDate(date)}
+                />
+              </div>
             </div>
             <div className="relative w-full px-2 md:w-1/2">
               <label className="block mb-1">
@@ -131,20 +134,20 @@ const BookingScreen = () => {
                 </svg>
               </div>
             </div>
-            <div className="w-full px-2">
-              <label className="block mb-1">
-                Mobile Number{' '}
-                {errors.mobile && (
-                  <span className="text-red-400">*Mobile Number Required</span>
-                )}
-              </label>
-              <input
-                className="w-full h-10 px-3 text-base placeholder-gray-600 border rounded-lg focus:shadow-outline"
-                type="number"
-                name="mobile"
-                ref={register({ required: true })}
-              />
-            </div>
+          </div>
+          <div className="w-full">
+            <label className="block mb-1">
+              Mobile Number{' '}
+              {errors.mobile && (
+                <span className="text-red-400">*Mobile Number Required</span>
+              )}
+            </label>
+            <input
+              className="w-full h-10 px-3 text-base placeholder-gray-600 border rounded-lg focus:shadow-outline"
+              type="number"
+              name="mobile"
+              ref={register({ required: true })}
+            />
           </div>
         </div>
       </div>
