@@ -12,7 +12,7 @@ const FeatureScreen = () => {
         </p>
         <div className="flex flex-col justify-between items-start md:flex-row w-full">
           <div className="w-full my-12 md:my-16">
-            <div>
+            <div className="transform transition-all hover:scale-110">
               <img
                 src="/img/features/pin.svg"
                 width="100px"
@@ -30,7 +30,7 @@ const FeatureScreen = () => {
           </div>
 
           <div className="w-full my-12 md:my-16">
-            <div>
+            <div className="transform transition-all hover:scale-110">
               <img
                 src="/img/features/airplane.svg"
                 width="100px"
@@ -49,7 +49,7 @@ const FeatureScreen = () => {
           </div>
 
           <div className="w-full my-12 md:my-16">
-            <div>
+            <div className="transform transition-all hover:scale-110">
               <img
                 src="/img/features/india.svg"
                 width="100px"

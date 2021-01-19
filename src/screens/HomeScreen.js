@@ -37,7 +37,7 @@ const HomeScreen = () => {
             >
               Book Cab
             </a>
-            <a className="p-3 text-charade-500 font-bold text-xl border-2 border-charade-500 rounded-xl w-full md:w-1/2 my-2 lg:my-0">
+            <a href="#" className="p-3 text-charade-500 font-bold text-xl border-2 border-charade-500 rounded-xl w-full md:w-1/2 my-2 lg:my-0">
               <FaWhatsapp className="inline-block -my-2 mr-1 text-2xl" />
               WhatsApp Us
             </a>

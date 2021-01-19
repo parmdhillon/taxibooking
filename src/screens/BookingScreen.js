@@ -173,7 +173,7 @@ const BookingScreen = () => {
           </div>
           <button
             onClick={handleSubmit((data) => onSubmit(data))}
-            className="bg-charade-500 text-white text-xl py-4 px-10 mt-5 mb-16 rounded-full font-bold disabled:opacity-50"
+            className="bg-charade-500 text-white text-xl py-4 px-10 mt-5 mb-16 rounded-full font-bold disabled:opacity-50 transform transition-all hover:scale-110"
             disabled={loading}
           >
             {loading ? `Booking...` : `Book Now`}

@@ -5,7 +5,7 @@ const PriceCard = ({
   route: { startLoc, endLoc, swift, ertiga, innova, traveller },
 }) => {
   return (
-    <div className="w-full px-5">
+    <div className="w-full px-5 transform transition-all hover:scale-90">
       <div
         style={{ borderRadius: '40px' }}
         className="bg-white w-full md:w-52 py-3 overflow-hidden"
