@@ -18,7 +18,7 @@ const FooterScreen = () => {
             Contact Us
           </span>
           <div className="inline-block">
-            <span className="text-white font-bold text-xl block my-2">
+            <span className="text-white font-bold text-xl block mb-2">
               <FaUser className="inline -mt-1 mr-2" /> Manpreet Singh
             </span>
             <span className="text-white text-xl block my-2">
@@ -31,7 +31,7 @@ const FooterScreen = () => {
         </div>
 
         <div className="px-6 max-w-full md:max-w-sm text-center md:text-left">
-          <span className="font-bold text-charade-100">Our Services</span>
+          <span className="font-bold text-charade-100 my-2 block">Our Services</span>
           <span className="text-white block my-2">
             We offer Taxi from Chandigarh to Delhi, Shimla, Manali, Amritsar,
             Jammu at best prices. We are just one call away from you.

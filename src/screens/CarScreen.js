@@ -47,7 +47,7 @@ const CarScreen = () => {
           </picture>
           <span className="py-2 px-4 bg-charade-50 rounded-full text-charade-500 font-bold">
             <FaRupeeSign className="inline -mt-1" />
-            12/km
+            17/km
           </span>
         </div>
       </div>
