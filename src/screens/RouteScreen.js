@@ -53,8 +53,8 @@ const RouteScreen = () => {
       </span>
       <div className="w-full px-8">
         <Slider {...settings}>
-          {routes.map((route) => (
-            <PriceCard route={route} />
+          {routes.map((route, index) => (
+            <PriceCard key={index} route={route} />
           ))}
         </Slider>
       </div>

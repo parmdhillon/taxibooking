@@ -1,13 +1,11 @@
 import React from 'react';
 import { FaArrowDown, FaArrowUp, FaCarSide, FaRupeeSign } from 'react-icons/fa';
 
-const PriceCard = ({
-  route: { startLoc, endLoc, swift, ertiga, innova, traveller },
-}) => {
+const PriceCard = ({ route: { startLoc, endLoc, sedan, suv, traveller } }) => {
   return (
-    <div className="w-full px-5 transform transition-all hover:scale-90">
+    <div className="w-full px-5 transform transition-all hover:scale-110 py-10">
       <div
-        style={{ borderRadius: '40px' }}
+        style={{ borderRadius: '20px' }}
         className="bg-white w-full md:w-52 py-3 overflow-hidden"
       >
         <div className="px-3 flex flex-col justify-center items-center">
@@ -24,23 +22,18 @@ const PriceCard = ({
         </div>
         <div className="w-full px-3 font-bold text-charade-500">
           <div className="flex justify-between my-3">
-            <span>Swift Dzire</span>
-            <span>{swift}</span>
+            <span>Sedan</span>
+            <span>{sedan.toLocaleString('en')}</span>
           </div>
 
           <div className="flex justify-between my-3">
-            <span>Ertiga</span>
-            <span>{ertiga}</span>
-          </div>
-
-          <div className="flex justify-between my-3">
-            <span>Innova</span>
-            <span>{innova}</span>
+            <span>SUV</span>
+            <span>{suv.toLocaleString('en')}</span>
           </div>
 
           <div className="flex justify-between my-3">
             <span>Traveller</span>
-            <span>{traveller}</span>
+            <span>{traveller.toLocaleString('en')}</span>
           </div>
         </div>
       </div>

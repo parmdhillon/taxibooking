@@ -1,27 +1,51 @@
 import React from 'react';
-import { FaCopyright, FaEnvelope, FaPhoneAlt, FaUser } from 'react-icons/fa';
+import {
+  FaCopyright,
+  FaEnvelope,
+  FaFacebook,
+  FaInstagram,
+  FaPhoneAlt,
+  FaTwitter,
+  FaUser,
+} from 'react-icons/fa';
 
 const FooterScreen = () => {
   return (
-    <div className="w-full">
-      <div className="bg-charade-500 py-4 flex flex-col md:flex-row justify-around items-center">
-        <div className="px-2">
-          <span className="text-charade-100 block my-2 text-center md:text-left">Contact Us</span>
-          <span className="text-white font-bold text-xl block my-2">
-            <FaUser className="inline -mt-1 mr-2" /> Manpreet Singh
+    <section id="contact" className="w-full">
+      <div className="bg-charade-500 py-4 flex flex-col md:flex-row justify-around">
+        <div className="px-2 flex justify-center flex-col items-center">
+          <span className="text-charade-100 block my-2 text-center md:text-left">
+            Contact Us
           </span>
-          <span className="text-white text-xl block my-2">
-            <FaEnvelope className="inline -mt-1 mr-2" /> kirattours@gmail.com
-          </span>
-          <span className="text-white text-xl block my-2">
-            <FaPhoneAlt className="inline -mt-1 mr-2" /> +91 9465313982
+          <div className="inline-block">
+            <span className="text-white font-bold text-xl block my-2">
+              <FaUser className="inline -mt-1 mr-2" /> Manpreet Singh
+            </span>
+            <span className="text-white text-xl block my-2">
+              <FaEnvelope className="inline -mt-1 mr-2" /> kirattours@gmail.com
+            </span>
+            <span className="text-white text-xl block my-2">
+              <FaPhoneAlt className="inline -mt-1 mr-2" /> +91 9465313982
+            </span>
+          </div>
+        </div>
+
+        <div className="px-6 max-w-full md:max-w-sm text-center md:text-left">
+          <span className="font-bold text-charade-100">Our Services</span>
+          <span className="text-white block my-2">
+            We offer Taxi from Chandigarh to Delhi, Shimla, Manali, Amritsar,
+            Jammu at best prices. We are just one call away from you.
           </span>
         </div>
-        <div className="px-6 flex flex-col justify-center items-center">
-        <span className="text-charade-100 block my-2">Booking on WhatsApp</span>
-        <div className="p-4 bg-charade-300 rounded-3xl w-32 h-32 flex items-center justify-center">
-            <img src="/img/whatsapp.svg" className="w-20" />
-        </div>
+        <div className="px-6 max-w-full md:max-w-sm text-center md:text-left">
+          <span className="block my-2 md:text-left text-charade-100 text-center">
+            <b>Follow Us</b>
+          </span>
+          <div className="my-2 text-charade-100 text-2xl">
+            <FaFacebook className="inline-block mr-3" />
+            <FaInstagram className="inline-block mr-3" />
+            <FaTwitter className="inline-block" />
+          </div>
         </div>
       </div>
       <div className="bg-white text-center my-4">
@@ -30,7 +54,7 @@ const FooterScreen = () => {
         </p>
         <p className="text-charade-400">Chandigarh, Punjab, India</p>
       </div>
-    </div>
+    </section>
   );
 };
 
